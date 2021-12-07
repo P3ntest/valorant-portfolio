@@ -4,10 +4,192 @@
     <meta charset="UTF-8" />
     <link rel="icon" type="image/svg+xml" href="favicon.svg" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Vite App</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Roboto:wght@100;300;400;500;700;900&display=swap"
+      rel="stylesheet"
+    />
+    <link rel="stylesheet" href="styles/index.css" />
+    <link rel="stylesheet" href="styles/style.css" />
+    <title>P3ntest</title>
   </head>
   <body>
-    <div id="app"></div>
-    <script type="module" src="/main.js"></script>
+    <img
+      src="images/decoration/p3ntest.svg"
+      alt="P3ntest Development"
+      class="decoration decoration-p3ntest"
+    />
+    <div class="nav" id="nav">
+      <img src="images/logo.svg" alt="P3ntest Logo" class="m-5 mr-8" />
+      <div class="flex flex-row flex-wrap justify-center items-center">
+        <a href="" class="px-4 hover:text-white">Home</a>
+        <a href="" class="px-4 hover:text-white">Latest Work</a>
+        <a href="" class="px-4 hover:text-white">Services</a>
+        <a href="" class="px-4 hover:text-white">Reviews</a>
+      </div>
+    </div>
+    <script>
+      window.onscroll = function () {
+        scrollFunction();
+      };
+
+      function scrollFunction() {
+        if (
+          document.body.scrollTop > 80 ||
+          document.documentElement.scrollTop > 80
+        ) {
+          document.getElementById("nav").classList.add("nav-scroll");
+        } else {
+          document.getElementById("nav").classList.remove("nav-scroll");
+        }
+      }
+    </script>
+    <div
+      class="
+        h-screen
+        bg-main
+        flex flex-col
+        md:flex-row
+        items-center
+        justify-center
+      "
+    >
+      <h1 class="text-white font-black main-header text-5xl md:text-9xl">
+        Hi, I'm <br /><span class="text-val">P3ntest</span>
+      </h1>
+      <img
+        src="images/logo.svg"
+        alt="P3ntest Logo"
+        class="w-52 mt-20 ml-50 md:w-96 md:ml-28 md:mt-4"
+      />
+    </div>
+    <div class="pl-96 pt-40 pr-28 pb-96 bg-main-darker">
+      <h1 class="section-header">MY LATEST WORK</h1>
+      <div
+        class="
+          flex flex-row
+          w-full
+          mt-20
+          text-text-card
+          font-medium
+          text-2xl text-center
+          items-stretch
+          z-50
+        "
+      >
+        <div class="w-1/4 mr-6">
+          <div class="card group">
+            <div
+              class="card-image"
+              style="background-image: url('images/work/vb.png')"
+            >
+              <span class="hover-mask mix-blend-multiply"></span>
+            </div>
+            <p class="p-10">
+              Vibing Cloud: Video Game Cheating Software Index Page
+            </p>
+            <p class="card-footer">HTML · CSS · JS</p>
+          </div>
+        </div>
+        <div class="w-1/4 mx-6">
+          <div class="card group">
+            <div
+              class="card-image"
+              style="background-image: url('images/work/orca.png')"
+            >
+              <span class="hover-mask mix-blend-multiply"></span>
+            </div>
+            <p class="p-10">
+              Discord Bots for NFT and Crypot Trading Community | Tracker,
+              Leaderboards, Price Watcher
+            </p>
+            <p class="card-footer">HTML · CSS · JS</p>
+          </div>
+        </div>
+        <div class="w-1/4 mx-6">
+          <div class="card group">
+            <div
+              class="card-image"
+              style="background-image: url('images/work/tod.png')"
+            >
+              <span class="hover-mask mix-blend-multiply"></span>
+            </div>
+            <p class="p-10">
+              Truth or Dare Game Website including full backend with data
+              fetching
+            </p>
+            <p class="card-footer">HTML · CSS · JS</p>
+          </div>
+        </div>
+        <div class="w-1/4 ml-6">
+          <div class="card group">
+            <div
+              class="card-image"
+              style="background-image: url('images/work/dcp.png')"
+            >
+              <span class="hover-mask mix-blend-multiply"></span>
+            </div>
+            <p class="p-10">
+              Discord bot Web-Config Creator Tool for Developers
+            </p>
+            <p class="card-footer">HTML · CSS · JS</p>
+          </div>
+        </div>
+      </div>
+      <div class="divider"></div>
+      <div class="w-full flex flex-row justify-items-stretch">
+        <div class="flex-1">
+          <h1 class="section-header">MY SERVICES</h1>
+        </div>
+        <div class="flex-0">
+          <h1 class="section-header mb-16">CONTACT ME</h1>
+          <div class="socials">
+            <div class="socials-image-body">
+              <div class="socials-image">
+                <img src="images/socials/discord.svg" alt="" />
+              </div>
+            </div>
+            <div class="socials-body">
+              <span class="z-10">DISCORD</span>
+              <span class="hover-mask"></span>
+            </div>
+          </div>
+          <div class="socials">
+            <div class="socials-image-body">
+              <div class="socials-image">
+                <img src="images/socials/steam.svg" alt="" />
+              </div>
+            </div>
+            <div class="socials-body">
+              <span class="z-10">STEAM</span>
+              <span class="hover-mask"></span>
+            </div>
+          </div>
+          <div class="socials">
+            <div class="socials-image-body">
+              <div class="socials-image">
+                <img src="images/socials/github.svg" alt="" />
+              </div>
+            </div>
+            <div class="socials-body">
+              <span class="z-10">GITHUB</span>
+              <span class="hover-mask"></span>
+            </div>
+          </div>
+          <div class="socials">
+            <div class="socials-image-body">
+              <div class="socials-image">
+                <img src="images/socials/twitter.svg" alt="" />
+              </div>
+            </div>
+            <div class="socials-body">
+              <span class="z-10">TWITTER</span>
+              <span class="hover-mask"></span>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
   </body>
 </html>

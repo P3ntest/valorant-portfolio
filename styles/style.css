@@ -1,0 +1,127 @@
+@import "tailwindcss/base";
+@import "tailwindcss/components";
+@import "tailwindcss/utilities";
+
+body {
+  background-color: #f5f5f5;
+}
+
+.nav {
+  @apply fixed
+        top-0
+        left-0
+        w-screen
+        text-xl
+        text-text-nav
+        flex flex-row
+        items-center
+        transition-all;
+}
+
+.nav img {
+  @apply transition-all;
+}
+
+.nav img {
+  @apply h-11;
+}
+
+.nav-scroll img {
+  @apply h-9;
+}
+
+.nav-scroll {
+  @apply bg-black text-sm;
+}
+
+.section-header {
+  @apply text-white text-5xl uppercase font-black tracking-tighter;
+}
+
+.card {
+  @apply w-full bg-white-smoke hover:bg-val hover:text-white cursor-pointer h-full transition-all relative pb-16;
+}
+
+.hover-mask {
+  content: "";
+  display: block;
+  position: absolute;
+  height: 100%;
+  width: 120%;
+  top: 0;
+  left: -5%;
+  /* z-index: 10; */
+  -webkit-transform: translateX(-110%) skew(-10deg);
+  transform: translateX(-110%) skew(-10deg);
+  -webkit-transition: -webkit-transform 0.3s ease-out;
+  transition: -webkit-transform 0.3s ease-out;
+  transition: transform 0.3s ease-out;
+  transition: transform 0.3s ease-out, -webkit-transform 0.3s ease-out;
+  background-color: #ff4655;
+}
+
+.multiply {
+  mix-blend-mode: multiply;
+}
+
+.card-image {
+  @apply w-full h-40 bg-cover;
+  position: relative;
+  overflow: hidden;
+}
+
+.hover-mask-parent {
+  @apply relative;
+}
+
+.hover-mask-parent:hover .hover-mask,
+.card:hover .hover-mask {
+  -webkit-transform: translateX(0) skew(0);
+  transform: translateX(0) skew(0);
+}
+
+.card-footer {
+  @apply pt-10 mb-3 text-text-subcard text-lg group-hover:text-white-smoke absolute bottom-0 left-0 right-0 text-center;
+}
+
+.decoration {
+  position: absolute;
+}
+
+.decoration-p3ntest {
+  top: calc(100vh + 10rem);
+}
+
+.divider {
+  @apply w-full h-1 bg-white-light my-20;
+}
+
+.socials {
+  @apply w-80
+              bg-main-dark
+              flex flex-row
+              items-stretch
+              justify-items-stretch
+              mb-3
+              hover-mask-parent
+              cursor-pointer;
+}
+
+.socials-body {
+  @apply text-white
+                pl-6
+                flex-1
+                align-middle
+                overflow-hidden
+                relative
+                flex
+                items-center;
+}
+
+.socials-image {
+  @apply w-8 h-8 flex items-center justify-center;
+}
+
+.socials-image-body {
+  @apply bg-main-light p-6;
+}
