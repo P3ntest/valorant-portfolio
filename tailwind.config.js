@@ -25,6 +25,7 @@ module.exports = {
           nav: "#8FA3B0",
           card: "#0F1923",
           subcard: "#4F4245",
+          onblack: "#747185",
         },
       },
     },

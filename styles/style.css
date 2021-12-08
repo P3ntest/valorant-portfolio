@@ -151,3 +151,28 @@ body {
                     justify-evenly
                     items-center;
 }
+
+.review {
+  @apply bg-black p-5 pl-7 text-text-onblack relative;
+}
+
+.review::after {
+  @apply bg-val w-2 absolute left-0 top-0 h-full;
+  content: "";
+}
+
+.review p {
+  @apply text-text-onblack text-xl font-medium my-2;
+}
+
+.review h3 {
+  @apply font-black text-lg text-right mt-5;
+}
+
+.review h1 {
+  @apply font-black text-white text-2xl;
+}
+
+.row {
+  @apply w-full flex flex-row items-stretch;
+}
