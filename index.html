@@ -21,15 +21,27 @@
     <script src="lib/smoothscroll.js"></script>
   </head>
   <body class="h-full">
-    <div class="overflow-hidden" id="start">
-      <img
-        src="images/decoration/p3ntest.svg"
+    <div class="overflow-hidden relative" id="start">
+      <div
+        style="
+          background-image: url('images/decoration/p3ntest.svg');
+          background-repeat: no-repeat;
+        "
         alt="P3ntest Development"
-        class="absolute decoration decoration-p3ntest z-20 overflow-hidden"
-      />
+        class="
+          absolute
+          decoration decoration-p3ntest
+          w-60
+          h-full
+          z-20
+          overflow-hidden
+        "
+      ></div>
 
       <div class="nav" id="nav">
-        <img src="images/logo.svg" alt="P3ntest Logo" class="m-5 mr-8" />
+        <a href="/"
+          ><img src="images/logo.svg" alt="P3ntest Logo" class="m-5 mr-8"
+        /></a>
         <div
           class="hidden md:flex flex-row flex-wrap justify-center items-center"
         >
