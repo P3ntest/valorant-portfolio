@@ -10,8 +10,12 @@
       href="https://fonts.googleapis.com/css2?family=Roboto:wght@100;300;400;500;700;900&display=swap"
       rel="stylesheet"
     />
-    <link rel="stylesheet" href="styles/index.css" />
-    <link rel="stylesheet" href="styles/style.css" />
+
+    <link rel="stylesheet" href="node_modules/aos/dist/aos.css" />
+    <script src="node_modules/aos/dist/aos.js"></script>
+
+    <link rel="stylesheet" href="./styles/index.css" />
+    <link rel="stylesheet" href="./styles/style.css" />
     <title>P3ntest</title>
   </head>
   <body>
@@ -77,20 +81,23 @@
           items-stretch
           z-50
         "
+        data-aos="fade-up"
       >
         <div class="w-1/4 mr-6">
-          <div class="card group">
-            <div
-              class="card-image"
-              style="background-image: url('images/work/vb.png')"
-            >
-              <span class="hover-mask mix-blend-multiply"></span>
+          <a href="https://vibingcloud.com/" target="_blank">
+            <div class="card group">
+              <div
+                class="card-image"
+                style="background-image: url('images/work/vb.png')"
+              >
+                <span class="hover-mask mix-blend-multiply"></span>
+              </div>
+              <p class="p-10">
+                Vibing Cloud: Video Game Cheating Software Index Page
+              </p>
+              <p class="card-footer">HTML · CSS · JS</p>
             </div>
-            <p class="p-10">
-              Vibing Cloud: Video Game Cheating Software Index Page
-            </p>
-            <p class="card-footer">HTML · CSS · JS</p>
-          </div>
+          </a>
         </div>
         <div class="w-1/4 mx-6">
           <div class="card group">
@@ -123,73 +130,114 @@
           </div>
         </div>
         <div class="w-1/4 ml-6">
-          <div class="card group">
-            <div
-              class="card-image"
-              style="background-image: url('images/work/dcp.png')"
-            >
-              <span class="hover-mask mix-blend-multiply"></span>
+          <a href="https://discordcp.dev/" target="_blank">
+            <div class="card group">
+              <div
+                class="card-image"
+                style="background-image: url('images/work/dcp.png')"
+              >
+                <span class="hover-mask mix-blend-multiply"></span>
+              </div>
+              <p class="p-10">
+                Discord bot Web-Config Creator Tool for Developers
+              </p>
+              <p class="card-footer">HTML · CSS · JS</p>
             </div>
-            <p class="p-10">
-              Discord bot Web-Config Creator Tool for Developers
-            </p>
-            <p class="card-footer">HTML · CSS · JS</p>
-          </div>
+          </a>
         </div>
       </div>
       <div class="divider"></div>
       <div class="w-full flex flex-row justify-items-stretch">
-        <div class="flex-1">
-          <h1 class="section-header">MY SERVICES</h1>
+        <div class="flex-1 mr-20">
+          <h1 class="section-header mb-16">MY SERVICES</h1>
+          <div class="w-full">
+            <div class="w-full flex flex-row mb-7" data-aos="fade-up">
+              <div class="service">
+                <div class="service-icons">
+                  <img src="images/features/discord.svg" alt="Discord Logo" />
+                  <img src="images/features/robot.svg" alt="Bot Icon" />
+                </div>
+                <div class="service-footer">Discord Bots</div>
+              </div>
+              <div class="service">
+                <div class="service-icons">
+                  <img src="images/features/gear.svg" alt="Discord Logo" />
+                  <img src="images/features/db.svg" alt="Bot Icon" />
+                </div>
+                <div class="service-footer">Backend Development</div>
+              </div>
+            </div>
+            <div class="w-full flex flex-row" data-aos="fade-up">
+              <div class="service">
+                <div class="service-icons">
+                  <img src="images/features/design.svg" alt="Discord Logo" />
+                  <img src="images/features/web.svg" alt="Bot Icon" />
+                </div>
+                <div class="service-footer">Web Design</div>
+              </div>
+              <div class="service">
+                <div class="service-icons">
+                  <img src="images/features/block.svg" alt="Discord Logo" />
+                  <img src="images/features/puzzle.svg" alt="Bot Icon" />
+                </div>
+                <div class="service-footer">Minecraft Plugins</div>
+              </div>
+            </div>
+          </div>
         </div>
         <div class="flex-0">
           <h1 class="section-header mb-16">CONTACT ME</h1>
-          <div class="socials">
-            <div class="socials-image-body">
-              <div class="socials-image">
-                <img src="images/socials/discord.svg" alt="" />
+          <div data-aos="fade-left">
+            <div class="socials">
+              <div class="socials-image-body">
+                <div class="socials-image">
+                  <img src="images/socials/discord.svg" alt="" />
+                </div>
+              </div>
+              <div class="socials-body">
+                <span class="z-10">DISCORD</span>
+                <span class="hover-mask"></span>
               </div>
             </div>
-            <div class="socials-body">
-              <span class="z-10">DISCORD</span>
-              <span class="hover-mask"></span>
-            </div>
-          </div>
-          <div class="socials">
-            <div class="socials-image-body">
-              <div class="socials-image">
-                <img src="images/socials/steam.svg" alt="" />
+            <div class="socials">
+              <div class="socials-image-body">
+                <div class="socials-image">
+                  <img src="images/socials/steam.svg" alt="" />
+                </div>
+              </div>
+              <div class="socials-body">
+                <span class="z-10">STEAM</span>
+                <span class="hover-mask"></span>
               </div>
             </div>
-            <div class="socials-body">
-              <span class="z-10">STEAM</span>
-              <span class="hover-mask"></span>
-            </div>
-          </div>
-          <div class="socials">
-            <div class="socials-image-body">
-              <div class="socials-image">
-                <img src="images/socials/github.svg" alt="" />
+            <div class="socials">
+              <div class="socials-image-body">
+                <div class="socials-image">
+                  <img src="images/socials/github.svg" alt="" />
+                </div>
+              </div>
+              <div class="socials-body">
+                <span class="z-10">GITHUB</span>
+                <span class="hover-mask"></span>
               </div>
             </div>
-            <div class="socials-body">
-              <span class="z-10">GITHUB</span>
-              <span class="hover-mask"></span>
-            </div>
-          </div>
-          <div class="socials">
-            <div class="socials-image-body">
-              <div class="socials-image">
-                <img src="images/socials/twitter.svg" alt="" />
+            <div class="socials">
+              <div class="socials-image-body">
+                <div class="socials-image">
+                  <img src="images/socials/twitter.svg" alt="" />
+                </div>
               </div>
-            </div>
-            <div class="socials-body">
-              <span class="z-10">TWITTER</span>
-              <span class="hover-mask"></span>
+              <div class="socials-body">
+                <span class="z-10">TWITTER</span>
+                <span class="hover-mask"></span>
+              </div>
             </div>
           </div>
         </div>
       </div>
     </div>
+    <script>
+      AOS.init();
+    </script>
   </body>
 </html>
