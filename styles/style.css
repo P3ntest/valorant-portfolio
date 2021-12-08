@@ -176,3 +176,40 @@ body {
 .row {
   @apply w-full flex flex-row items-stretch;
 }
+
+.discord-bot-feature {
+  @apply w-1/2
+  mr-4
+  border-val border-4
+  hover:bg-val
+  transition-all
+  hover-mask-parent
+  cursor-pointer;
+}
+
+.discord-bot-feature h1 {
+  @apply w-full
+                  bg-main-light
+                  transition-all
+                  text-white
+                  font-black
+                  text-xl
+                  p-4
+}
+
+.discord-bot-feature:hover h1 {
+  @apply bg-val;
+}
+
+.discord-bot-feature div {
+  @apply font-black
+                  text-white-light
+                  transition-all
+                  p-4
+                  text-lg
+                  leading-normal
+}
+
+.discord-bot-feature:hover div {
+  @apply text-white;
+}

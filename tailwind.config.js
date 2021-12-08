@@ -26,6 +26,7 @@ module.exports = {
           card: "#0F1923",
           subcard: "#4F4245",
           onblack: "#747185",
+          onbg: "#8F9E9C",
         },
       },
     },
