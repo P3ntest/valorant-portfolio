@@ -17,386 +17,417 @@
     <link rel="stylesheet" href="./styles/index.css" />
     <link rel="stylesheet" href="./styles/style.css" />
     <title>P3ntest</title>
+
+    <script src="lib/smoothscroll.js"></script>
   </head>
-  <body>
-    <div class="absolute decoration decoration-p3ntest z-20">
+  <body class="h-full">
+    <div class="overflow-hidden" id="start">
       <img
         src="images/decoration/p3ntest.svg"
         alt="P3ntest Development"
-        class=""
+        class="absolute decoration decoration-p3ntest z-20 overflow-hidden"
       />
-    </div>
-    <div class="nav" id="nav">
-      <img src="images/logo.svg" alt="P3ntest Logo" class="m-5 mr-8" />
-      <div class="flex flex-row flex-wrap justify-center items-center">
-        <a href="" class="px-4 hover:text-white">Home</a>
-        <a href="#latest_work" class="px-4 hover:text-white">Latest Work</a>
-        <a href="#services" class="px-4 hover:text-white">Services</a>
-        <a href="#reviews" class="px-4 hover:text-white">Reviews</a>
-      </div>
-    </div>
-    <script>
-      window.onscroll = function () {
-        scrollFunction();
-      };
 
-      function scrollFunction() {
-        if (
-          document.body.scrollTop > 80 ||
-          document.documentElement.scrollTop > 80
-        ) {
-          document.getElementById("nav").classList.add("nav-scroll");
-        } else {
-          document.getElementById("nav").classList.remove("nav-scroll");
+      <div class="nav" id="nav">
+        <img src="images/logo.svg" alt="P3ntest Logo" class="m-5 mr-8" />
+        <div
+          class="hidden md:flex flex-row flex-wrap justify-center items-center"
+        >
+          <a href="#start" class="px-4 hover:text-white">Home</a>
+          <a href="#latest_work" class="px-4 hover:text-white">Latest Work</a>
+          <a href="#services" class="px-4 hover:text-white">Services</a>
+          <a href="#reviews" class="px-4 hover:text-white">Reviews</a>
+        </div>
+      </div>
+      <script>
+        window.onscroll = function () {
+          scrollFunction();
+        };
+
+        function scrollFunction() {
+          if (
+            document.body.scrollTop > 80 ||
+            document.documentElement.scrollTop > 80
+          ) {
+            document.getElementById("nav").classList.add("nav-scroll");
+          } else {
+            document.getElementById("nav").classList.remove("nav-scroll");
+          }
         }
-      }
-    </script>
-    <div
-      class="
-        h-screen
-        bg-main
-        flex flex-col
-        md:flex-row
-        items-center
-        justify-center
-      "
-    >
-      <h1 class="text-white font-black main-header text-5xl md:text-9xl">
-        Hi, I'm <br /><span class="text-val">P3ntest</span>
-      </h1>
-      <img
-        src="images/logo.svg"
-        alt="P3ntest Logo"
-        class="w-52 mt-20 ml-50 md:w-96 md:ml-28 md:mt-4"
-      />
-    </div>
-    <div class="pl-96 pt-40 pr-28 pb-52 bg-main-darker relative">
-      <div id="latest_work" class="absolute" style="top: -20px"></div>
-      <h1 class="section-header">MY LATEST WORK</h1>
+      </script>
       <div
         class="
-          flex flex-row
-          w-full
-          mt-20
-          text-text-card
-          font-medium
-          text-2xl text-center
-          items-stretch
-          z-50
+          h-screen
+          bg-main
+          flex flex-col
+          md:flex-row
+          items-center
+          justify-center
         "
-        data-aos="fade-up"
       >
-        <div class="w-1/4 mr-6">
-          <a href="https://vibingcloud.com/" target="_blank">
-            <div class="card group">
-              <div
-                class="card-image"
-                style="background-image: url('images/work/vb.png')"
-              >
-                <span class="hover-mask mix-blend-multiply"></span>
-              </div>
-              <p class="p-10">
-                Vibing Cloud: Video Game Cheating Software Index Page
-              </p>
-              <p class="card-footer">HTML · CSS · JS</p>
-            </div>
-          </a>
-        </div>
-        <div class="w-1/4 mx-6">
-          <div class="card group">
-            <div
-              class="card-image"
-              style="background-image: url('images/work/orca.png')"
-            >
-              <span class="hover-mask mix-blend-multiply"></span>
-            </div>
-            <p class="p-10">
-              Discord Bots for NFT and Crypot Trading Community | Tracker,
-              Leaderboards, Price Watcher
-            </p>
-            <p class="card-footer">HTML · CSS · JS</p>
-          </div>
-        </div>
-        <div class="w-1/4 mx-6">
-          <div class="card group">
-            <div
-              class="card-image"
-              style="background-image: url('images/work/tod.png')"
-            >
-              <span class="hover-mask mix-blend-multiply"></span>
-            </div>
-            <p class="p-10">
-              Truth or Dare Game Website including full backend with data
-              fetching
-            </p>
-            <p class="card-footer">HTML · CSS · JS</p>
-          </div>
-        </div>
-        <div class="w-1/4 ml-6">
-          <a href="https://discordcp.dev/" target="_blank">
-            <div class="card group">
-              <div
-                class="card-image"
-                style="background-image: url('images/work/dcp.png')"
-              >
-                <span class="hover-mask mix-blend-multiply"></span>
-              </div>
-              <p class="p-10">
-                Discord bot Web-Config Creator Tool for Developers
-              </p>
-              <p class="card-footer">HTML · CSS · JS</p>
-            </div>
-          </a>
-        </div>
-      </div>
-      <div class="divider"></div>
-      <div class="w-full flex flex-row justify-items-stretch relative">
-        <div id="services" class="absolute" style="top: -120px"></div>
-        <div class="flex-1 mr-20">
-          <h1 class="section-header mb-16">MY SERVICES</h1>
-          <div class="w-full">
-            <div class="w-full flex flex-row mb-7" data-aos="fade-up">
-              <div class="service">
-                <div class="service-icons">
-                  <img src="images/features/discord.svg" alt="Discord Logo" />
-                  <img src="images/features/robot.svg" alt="Bot Icon" />
-                </div>
-                <div class="service-footer">Discord Bots</div>
-              </div>
-              <div class="service">
-                <div class="service-icons">
-                  <img src="images/features/gear.svg" alt="Discord Logo" />
-                  <img src="images/features/db.svg" alt="Bot Icon" />
-                </div>
-                <div class="service-footer">Backend Development</div>
-              </div>
-            </div>
-            <div class="w-full flex flex-row" data-aos="fade-up">
-              <div class="service">
-                <div class="service-icons">
-                  <img src="images/features/design.svg" alt="Discord Logo" />
-                  <img src="images/features/web.svg" alt="Bot Icon" />
-                </div>
-                <div class="service-footer">Web Design</div>
-              </div>
-              <div class="service">
-                <div class="service-icons">
-                  <img src="images/features/block.svg" alt="Discord Logo" />
-                  <img src="images/features/puzzle.svg" alt="Bot Icon" />
-                </div>
-                <div class="service-footer">Minecraft Plugins</div>
-              </div>
-            </div>
-          </div>
-        </div>
-        <div class="flex-0">
-          <h1 class="section-header mb-16">CONTACT ME</h1>
-          <div>
-            <a href="https://discord.gg/UhhFjzTb39">
-              <div class="socials" data-aos="fade-left">
-                <div class="socials-image-body">
-                  <div class="socials-image">
-                    <img src="images/socials/discord.svg" alt="" />
-                  </div>
-                </div>
-                <div class="socials-body">
-                  <span class="z-10">DISCORD</span>
-                  <span class="hover-mask"></span>
-                </div>
-              </div>
-            </a>
-            <a href="https://steamcommunity.com/id/p3ntest/">
-              <div class="socials" data-aos="fade-left">
-                <div class="socials-image-body">
-                  <div class="socials-image">
-                    <img src="images/socials/steam.svg" alt="" />
-                  </div>
-                </div>
-                <div class="socials-body">
-                  <span class="z-10">STEAM</span>
-                  <span class="hover-mask"></span>
-                </div>
-              </div>
-            </a>
-            <a href="https://github.com/p3ntest">
-              <div class="socials" data-aos="fade-left">
-                <div class="socials-image-body">
-                  <div class="socials-image">
-                    <img src="images/socials/github.svg" alt="" />
-                  </div>
-                </div>
-                <div class="socials-body">
-                  <span class="z-10">GITHUB</span>
-                  <span class="hover-mask"></span>
-                </div>
-              </div>
-            </a>
-            <a href="https://twitter.com/JuliusVoorden">
-              <div class="socials" data-aos="fade-left">
-                <div class="socials-image-body">
-                  <div class="socials-image">
-                    <img src="images/socials/twitter.svg" alt="" />
-                  </div>
-                </div>
-                <div class="socials-body">
-                  <span class="z-10">TWITTER</span>
-                  <span class="hover-mask"></span>
-                </div>
-              </div>
-            </a>
-          </div>
-        </div>
-      </div>
-      <div class="divider"></div>
-      <div class="w-full relative pr-52">
-        <div id="reviews" class="absolute" style="top: -120px"></div>
+        <h1 class="text-white font-black main-header text-5xl md:text-9xl">
+          Hi, I'm <br /><span class="text-val">P3ntest</span>
+        </h1>
         <img
-          src="images/decoration/barcode.svg"
-          alt=""
-          class="decoration right-0 top-0 h-full"
-          data-aos="fade-left"
+          src="images/logo.svg"
+          alt="P3ntest Logo"
+          class="w-52 mt-20 ml-50 md:w-96 md:ml-28 md:mt-4"
         />
-        <div class="w-full">
-          <h1 class="section-header mb-16">CLIENT REVIEWS</h1>
-          <div class="row mb-8" data-aos="fade-up">
-            <div class="review mr-4">
-              <h1>BANKERS</h1>
-              <p>
-                “Very down-to-earth, respectable and professional developer. I
-                can recommend him to anyone in need of a discord bot! He
-                provided me with an easy-to-use web interface to change settings
-                of my product.”
+      </div>
+      <div
+        class="
+          px-5
+          md:pl-96
+          pt-10
+          md:pt-40 md:pr-28
+          pb-20
+          md:pb-52
+          bg-main-darker
+          relative
+        "
+      >
+        <div id="latest_work" class="absolute" style="top: -20px"></div>
+        <h1 class="section-header">MY LATEST WORK</h1>
+        <div
+          class="
+            flex flex-col
+            md:flex-row
+            w-full
+            mt-10
+            md:mt-20
+            text-text-card
+            font-medium
+            text-2xl text-center
+            items-stretch
+            z-50
+          "
+        >
+          <div class="mb-6 md:mb-0 md:w-1/4 md:mr-6" data-aos="fade-up">
+            <a href="https://vibingcloud.com/" target="_blank">
+              <div class="card group">
+                <div
+                  class="card-image"
+                  style="background-image: url('images/work/vb.png')"
+                >
+                  <span class="hover-mask mix-blend-multiply"></span>
+                </div>
+                <p class="p-10">
+                  Vibing Cloud: Video Game Cheating Software Index Page
+                </p>
+                <p class="card-footer">HTML · CSS · JS</p>
+              </div>
+            </a>
+          </div>
+          <div class="mb-6 md:mb-0 md:w-1/4 md:mx-6" data-aos="fade-up">
+            <div class="card group">
+              <div
+                class="card-image"
+                style="background-image: url('images/work/orca.png')"
+              >
+                <span class="hover-mask mix-blend-multiply"></span>
+              </div>
+              <p class="p-10">
+                Discord Bots for NFT and Crypot Trading Community | Tracker,
+                Leaderboards, Price Watcher
               </p>
-              <h3>June 2020 · Discord Bot</h3>
-            </div>
-            <div class="review ml-4">
-              <h1>YAN CINTRO</h1>
-              <p>
-                “P3ntest helped me build my dream minecraft server. He not only
-                explained everything to me and told me where to start but also
-                got a lot of work done himself. Thanks to him, I could launch
-                less than 3 months after development start. He did an amazing
-                job with the plugins, making them well documented and memory
-                leak free.”
-              </p>
-              <h3>March 2019 · MC Plugin</h3>
+              <p class="card-footer">HTML · CSS · JS</p>
             </div>
           </div>
-          <div class="row" data-aos="fade-up">
-            <div class="review mr-4">
-              <h1>TEEMOKINGDOM</h1>
-              <p>
-                “The developer always responded almost instantly and keeped
-                tweeking my site until I was happy with it. On the day before
-                the release he stayed up extra late just to finish even though
-                it was not his fault the site wasn’t finished. I can function
-                well in teams. He also had no problem working for a cheating
-                company even though he does not agree with the concept at all.”
+          <div class="mb-6 md:mb-0 md:w-1/4 md:mx-6" data-aos="fade-up">
+            <div class="card group">
+              <div
+                class="card-image"
+                style="background-image: url('images/work/tod.png')"
+              >
+                <span class="hover-mask mix-blend-multiply"></span>
+              </div>
+              <p class="p-10">
+                Truth or Dare Game Website including full backend with data
+                fetching
               </p>
-              <h3>June 2020 · Discord Bot</h3>
+              <p class="card-footer">HTML · CSS · JS</p>
             </div>
-            <div class="review ml-4">
-              <h1>TEFER</h1>
-              <p>
-                “Fast, easy to work with and friendly. He finished my stock
-                trading site’s backend within 7 days.”
-              </p>
-              <h3>March 2019 · MC Plugin</h3>
+          </div>
+          <div class="mb-6 md:mb-0 md:w-1/4 md:ml-6" data-aos="fade-up">
+            <a href="https://discordcp.dev/" target="_blank">
+              <div class="card group">
+                <div
+                  class="card-image"
+                  style="background-image: url('images/work/dcp.png')"
+                >
+                  <span class="hover-mask mix-blend-multiply"></span>
+                </div>
+                <p class="p-10">
+                  Discord bot Web-Config Creator Tool for Developers
+                </p>
+                <p class="card-footer">HTML · CSS · JS</p>
+              </div>
+            </a>
+          </div>
+        </div>
+        <div class="divider"></div>
+        <div
+          class="
+            w-full
+            flex flex-col
+            md:flex-row
+            justify-items-stretch
+            relative
+          "
+        >
+          <div id="services" class="absolute" style="top: -120px"></div>
+          <div class="flex-1 md:mr-20">
+            <h1 class="section-header mb-10 md:mb-16">MY SERVICES</h1>
+            <div class="w-full">
+              <div class="w-full flex flex-col md:flex-row md:mb-7">
+                <div class="service" data-aos="fade-up">
+                  <div class="service-icons">
+                    <img src="images/features/discord.svg" alt="Discord Logo" />
+                    <img src="images/features/robot.svg" alt="Bot Icon" />
+                  </div>
+                  <div class="service-footer">Discord Bots</div>
+                </div>
+                <div class="service" data-aos="fade-up">
+                  <div class="service-icons">
+                    <img src="images/features/gear.svg" alt="Discord Logo" />
+                    <img src="images/features/db.svg" alt="Bot Icon" />
+                  </div>
+                  <div class="service-footer">Backend Development</div>
+                </div>
+              </div>
+              <div class="w-full flex flex-col md:flex-row">
+                <div class="service" data-aos="fade-up">
+                  <div class="service-icons">
+                    <img src="images/features/design.svg" alt="Discord Logo" />
+                    <img src="images/features/web.svg" alt="Bot Icon" />
+                  </div>
+                  <div class="service-footer">Web Design</div>
+                </div>
+                <div class="service" data-aos="fade-up">
+                  <div class="service-icons">
+                    <img src="images/features/block.svg" alt="Discord Logo" />
+                    <img src="images/features/puzzle.svg" alt="Bot Icon" />
+                  </div>
+                  <div class="service-footer">Minecraft Plugins</div>
+                </div>
+              </div>
+            </div>
+          </div>
+          <div class="divider flex-0 block md:hidden"></div>
+          <div class="flex-0">
+            <h1 class="section-header mb-10 md:mb-16">CONTACT ME</h1>
+            <div>
+              <a href="https://discord.gg/UhhFjzTb39">
+                <div class="socials" data-aos="fade-left">
+                  <div class="socials-image-body">
+                    <div class="socials-image">
+                      <img src="images/socials/discord.svg" alt="" />
+                    </div>
+                  </div>
+                  <div class="socials-body">
+                    <span class="z-10">DISCORD</span>
+                    <span class="hover-mask"></span>
+                  </div>
+                </div>
+              </a>
+              <a href="https://steamcommunity.com/id/p3ntest/">
+                <div class="socials" data-aos="fade-left">
+                  <div class="socials-image-body">
+                    <div class="socials-image">
+                      <img src="images/socials/steam.svg" alt="" />
+                    </div>
+                  </div>
+                  <div class="socials-body">
+                    <span class="z-10">STEAM</span>
+                    <span class="hover-mask"></span>
+                  </div>
+                </div>
+              </a>
+              <a href="https://github.com/p3ntest">
+                <div class="socials" data-aos="fade-left">
+                  <div class="socials-image-body">
+                    <div class="socials-image">
+                      <img src="images/socials/github.svg" alt="" />
+                    </div>
+                  </div>
+                  <div class="socials-body">
+                    <span class="z-10">GITHUB</span>
+                    <span class="hover-mask"></span>
+                  </div>
+                </div>
+              </a>
+              <a href="https://twitter.com/JuliusVoorden">
+                <div class="socials" data-aos="fade-left">
+                  <div class="socials-image-body">
+                    <div class="socials-image">
+                      <img src="images/socials/twitter.svg" alt="" />
+                    </div>
+                  </div>
+                  <div class="socials-body">
+                    <span class="z-10">TWITTER</span>
+                    <span class="hover-mask"></span>
+                  </div>
+                </div>
+              </a>
             </div>
           </div>
         </div>
-      </div>
-      <div class="divider"></div>
-      <div>
-        <div class="w-full pr-96 relative">
+        <div class="divider"></div>
+        <div class="w-full relative md:pr-52">
+          <div id="reviews" class="absolute" style="top: -120px"></div>
           <img
-            src="images/decoration/botcard.svg"
+            src="images/decoration/barcode.svg"
             alt=""
-            class="decoration right-0"
+            class="decoration right-0 top-0 h-full"
             data-aos="fade-left"
           />
-          <h1 class="section-header mb-10">DISCORD BOTS</h1>
-          <p class="text-text-onbg text-xl">
-            I create feature rich, easy to use and budget friendly discord bots
-            of any kind. I wil integrate them with apis, add data storage and
-            anything you might want. What makes my discord bots stand out is the
-            ability for the client to edit the configuration directly in the web
-            browser instead of having to fiddle around with annoying JSON and
-            YAML files.
-          </p>
-          <div class="row mb-8 mt-12" data-aos="fade-up">
-            <div class="discord-bot-feature">
-              <h1>PROFESSIONAL AND CLEAN CODE</h1>
-              <div>
+          <div class="w-full">
+            <h1 class="section-header mb-10 md:mb-16">CLIENT REVIEWS</h1>
+            <div class="row md:mb-8">
+              <div class="review md:mr-4" data-aos="fade-up">
+                <h1>BANKERS</h1>
                 <p>
-                  I always use best practices and bleeding edge technologies to
-                  make sure your bot is the best version of itself.
+                  “Very down-to-earth, respectable and professional developer. I
+                  can recommend him to anyone in need of a discord bot! He
+                  provided me with an easy-to-use web interface to change
+                  settings of my product.”
                 </p>
+                <h3>June 2020 · Discord Bot</h3>
+              </div>
+              <div class="review md:ml-4" data-aos="fade-up">
+                <h1>YAN CINTRO</h1>
+                <p>
+                  “P3ntest helped me build my dream minecraft server. He not
+                  only explained everything to me and told me where to start but
+                  also got a lot of work done himself. Thanks to him, I could
+                  launch less than 3 months after development start. He did an
+                  amazing job with the plugins, making them well documented and
+                  memory leak free.”
+                </p>
+                <h3>March 2019 · MC Plugin</h3>
               </div>
             </div>
-            <div class="discord-bot-feature">
-              <h1>NO FIDDLING WITH CONFIG FILES</h1>
-              <div>
+            <div class="row">
+              <div class="review md:mr-4" data-aos="fade-up">
+                <h1>TEEMOKINGDOM</h1>
                 <p>
-                  My bots ship with a web browser based config editor.
-                  Customizing the bots is as easy as clicking a link. The
-                  updates will be mirrored instantly.
+                  “The developer always responded almost instantly and keeped
+                  tweeking my site until I was happy with it. On the day before
+                  the release he stayed up extra late just to finish even though
+                  it was not his fault the site wasn’t finished. I can function
+                  well in teams. He also had no problem working for a cheating
+                  company even though he does not agree with the concept at
+                  all.”
                 </p>
+                <h3>June 2020 · Discord Bot</h3>
+              </div>
+              <div class="review md:ml-4" data-aos="fade-up">
+                <h1>TEFER</h1>
+                <p>
+                  “Fast, easy to work with and friendly. He finished my stock
+                  trading site’s backend within 7 days.”
+                </p>
+                <h3>March 2019 · MC Plugin</h3>
               </div>
             </div>
           </div>
-          <div class="row" data-aos="fade-up">
-            <div class="discord-bot-feature">
-              <h1>INTEGRATIONS WITH ALMOST ANYTHING</h1>
-              <div>
-                <p>
-                  I can integrate any APIs you want. For example I can create
-                  stock bots, pokemon bots, csgo bots and weather bots.
-                </p>
+        </div>
+        <div class="divider"></div>
+        <div>
+          <div class="w-full md:pr-96 relative">
+            <img
+              src="images/decoration/botcard.svg"
+              alt=""
+              class="decoration right-0"
+              data-aos="fade-left"
+            />
+            <h1 class="section-header mb-10">DISCORD BOTS</h1>
+            <p class="text-text-onbg text-xl">
+              I create feature rich, easy to use and budget friendly discord
+              bots of any kind. I wil integrate them with apis, add data storage
+              and anything you might want. What makes my discord bots stand out
+              is the ability for the client to edit the configuration directly
+              in the web browser instead of having to fiddle around with
+              annoying JSON and YAML files.
+            </p>
+            <div class="row md:mb-8 mt-7 md:mt-12">
+              <div class="discord-bot-feature" data-aos="fade-up">
+                <h1>PROFESSIONAL AND CLEAN CODE</h1>
+                <div>
+                  <p>
+                    I always use best practices and bleeding edge technologies
+                    to make sure your bot is the best version of itself.
+                  </p>
+                </div>
+              </div>
+              <div class="discord-bot-feature" data-aos="fade-up">
+                <h1>NO FIDDLING WITH CONFIG FILES</h1>
+                <div>
+                  <p>
+                    My bots ship with a web browser based config editor.
+                    Customizing the bots is as easy as clicking a link. The
+                    updates will be mirrored instantly.
+                  </p>
+                </div>
               </div>
             </div>
-            <div class="discord-bot-feature">
-              <h1>LATEST DISCORD FEATURES</h1>
-              <div>
-                <p>
-                  Did you know discord bots can send dropdowns? My bots can use
-                  buttons, embeds, dropdowns and more. Message me to see what’s
-                  possible!
-                </p>
+            <div class="row">
+              <div class="discord-bot-feature" data-aos="fade-up">
+                <h1>INTEGRATIONS WITH ALMOST ANYTHING</h1>
+                <div>
+                  <p>
+                    I can integrate any APIs you want. For example I can create
+                    stock bots, pokemon bots, csgo bots and weather bots.
+                  </p>
+                </div>
+              </div>
+              <div class="discord-bot-feature" data-aos="fade-up">
+                <h1>LATEST DISCORD FEATURES</h1>
+                <div>
+                  <p>
+                    Did you know discord bots can send dropdowns? My bots can
+                    use buttons, embeds, dropdowns and more. Message me to see
+                    what’s possible!
+                  </p>
+                </div>
               </div>
             </div>
           </div>
         </div>
       </div>
-    </div>
-    <div class="bg-main p-20 flex flex-col items-center z-30 relative">
-      <h1 class="uppercase text-val text-6xl font-black tracking-tighter mb-16">
-        REACH OUT TO ME
-      </h1>
-      <iframe
-        src="https://discord.com/widget?id=795398577950162994&theme=dark"
-        width="350"
-        height="500"
-        allowtransparency="true"
-        frameborder="0"
-        sandbox="allow-popups allow-popups-to-escape-sandbox allow-same-origin allow-scripts"
-      ></iframe>
-    </div>
-    <div class="bg-black text-white-light w-full p-4 text-center relative z-30">
-      COPYRIGHT 2021 © P3NTEST
-    </div>
-    <script>
-      AOS.init();
+      <div class="bg-main p-20 flex flex-col items-center z-30 relative">
+        <h1
+          class="uppercase text-val text-6xl font-black tracking-tighter mb-16"
+        >
+          REACH OUT TO ME
+        </h1>
+        <iframe
+          src="https://discord.com/widget?id=795398577950162994&theme=dark"
+          width="350"
+          height="500"
+          allowtransparency="true"
+          frameborder="0"
+          sandbox="allow-popups allow-popups-to-escape-sandbox allow-same-origin allow-scripts"
+        ></iframe>
+      </div>
+      <div
+        class="bg-black text-white-light w-full p-4 text-center relative z-30"
+      >
+        COPYRIGHT 2021 © P3NTEST
+      </div>
+      <script>
+        AOS.init();
 
-      document.querySelectorAll('a[href^="#"]').forEach((anchor) => {
-        anchor.addEventListener("click", function (e) {
-          e.preventDefault();
+        document.querySelectorAll('a[href^="#"]').forEach((anchor) => {
+          anchor.addEventListener("click", function (e) {
+            e.preventDefault();
 
-          document.querySelector(this.getAttribute("href")).scrollIntoView({
-            behavior: "smooth",
+            document.querySelector(this.getAttribute("href")).scrollIntoView({
+              behavior: "smooth",
+            });
           });
         });
-      });
-    </script>
+      </script>
+    </div>
   </body>
 </html>
