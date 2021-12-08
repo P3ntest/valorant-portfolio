@@ -15,7 +15,7 @@ body {
         text-text-nav
         flex flex-row
         items-center
-        transition-all;
+        transition-all z-50;
 }
 
 .nav img {
