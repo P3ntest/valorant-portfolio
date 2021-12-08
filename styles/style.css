@@ -190,8 +190,7 @@ body {
   border-val border-4
   hover:bg-val
   transition-all
-  hover-mask-parent
-  cursor-pointer;
+  hover-mask-parent;
 }
 
 .discord-bot-feature h1 {
