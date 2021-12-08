@@ -28,9 +28,9 @@
       <img src="images/logo.svg" alt="P3ntest Logo" class="m-5 mr-8" />
       <div class="flex flex-row flex-wrap justify-center items-center">
         <a href="" class="px-4 hover:text-white">Home</a>
-        <a href="" class="px-4 hover:text-white">Latest Work</a>
-        <a href="" class="px-4 hover:text-white">Services</a>
-        <a href="" class="px-4 hover:text-white">Reviews</a>
+        <a href="#latest_work" class="px-4 hover:text-white">Latest Work</a>
+        <a href="#services" class="px-4 hover:text-white">Services</a>
+        <a href="#reviews" class="px-4 hover:text-white">Reviews</a>
       </div>
     </div>
     <script>
@@ -68,7 +68,8 @@
         class="w-52 mt-20 ml-50 md:w-96 md:ml-28 md:mt-4"
       />
     </div>
-    <div class="pl-96 pt-40 pr-28 pb-96 bg-main-darker">
+    <div class="pl-96 pt-40 pr-28 pb-96 bg-main-darker relative">
+      <div id="latest_work" class="absolute" style="top: -20px"></div>
       <h1 class="section-header">MY LATEST WORK</h1>
       <div
         class="
@@ -147,7 +148,8 @@
         </div>
       </div>
       <div class="divider"></div>
-      <div class="w-full flex flex-row justify-items-stretch">
+      <div class="w-full flex flex-row justify-items-stretch relative">
+        <div id="services" class="absolute" style="top: -120px"></div>
         <div class="flex-1 mr-20">
           <h1 class="section-header mb-16">MY SERVICES</h1>
           <div class="w-full">
@@ -237,6 +239,7 @@
       </div>
       <div class="divider"></div>
       <div class="w-full relative pr-52">
+        <div id="reviews" class="absolute" style="top: -120px"></div>
         <img
           src="images/decoration/barcode.svg"
           alt=""
@@ -358,6 +361,16 @@
     </div>
     <script>
       AOS.init();
+
+      document.querySelectorAll('a[href^="#"]').forEach((anchor) => {
+        anchor.addEventListener("click", function (e) {
+          e.preventDefault();
+
+          document.querySelector(this.getAttribute("href")).scrollIntoView({
+            behavior: "smooth",
+          });
+        });
+      });
     </script>
   </body>
 </html>
