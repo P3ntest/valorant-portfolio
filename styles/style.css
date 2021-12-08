@@ -39,7 +39,7 @@ body {
 }
 
 .card {
-  @apply w-full bg-white-smoke hover:bg-val hover:text-white cursor-pointer h-full transition-all relative pb-16;
+  @apply w-full bg-white-smoke hover:bg-val hover:text-white h-full transition-all relative pb-16;
 }
 
 .hover-mask {
