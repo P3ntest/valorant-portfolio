@@ -19,11 +19,13 @@
     <title>P3ntest</title>
   </head>
   <body>
-    <img
-      src="images/decoration/p3ntest.svg"
-      alt="P3ntest Development"
-      class="decoration decoration-p3ntest"
-    />
+    <div class="absolute decoration decoration-p3ntest z-20">
+      <img
+        src="images/decoration/p3ntest.svg"
+        alt="P3ntest Development"
+        class=""
+      />
+    </div>
     <div class="nav" id="nav">
       <img src="images/logo.svg" alt="P3ntest Logo" class="m-5 mr-8" />
       <div class="flex flex-row flex-wrap justify-center items-center">
@@ -68,7 +70,7 @@
         class="w-52 mt-20 ml-50 md:w-96 md:ml-28 md:mt-4"
       />
     </div>
-    <div class="pl-96 pt-40 pr-28 pb-96 bg-main-darker relative">
+    <div class="pl-96 pt-40 pr-28 pb-52 bg-main-darker relative">
       <div id="latest_work" class="absolute" style="top: -20px"></div>
       <h1 class="section-header">MY LATEST WORK</h1>
       <div
@@ -358,6 +360,22 @@
           </div>
         </div>
       </div>
+    </div>
+    <div class="bg-main p-20 flex flex-col items-center z-30 relative">
+      <h1 class="uppercase text-val text-6xl font-black tracking-tighter mb-16">
+        REACH OUT TO ME
+      </h1>
+      <iframe
+        src="https://discord.com/widget?id=795398577950162994&theme=dark"
+        width="350"
+        height="500"
+        allowtransparency="true"
+        frameborder="0"
+        sandbox="allow-popups allow-popups-to-escape-sandbox allow-same-origin allow-scripts"
+      ></iframe>
+    </div>
+    <div class="bg-black text-white-light w-full p-4 text-center relative z-30">
+      COPYRIGHT 2021 © P3NTEST
     </div>
     <script>
       AOS.init();
