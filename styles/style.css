@@ -184,13 +184,20 @@ body {
 
 .discord-bot-feature {
   @apply w-full md:w-1/2
+  relative
   mt-6
   md:mt-0
   mr-4
-  border-val border-4
-  hover:bg-val
+  bg-main
+  /* border-val border-4 */
+  /* hover:bg-val */
   transition-all
   hover-mask-parent;
+}
+
+.discord-bot-feature::after {
+  @apply absolute w-full h-1 bg-val top-0 left-0 z-30;
+  content: "" !important;
 }
 
 .discord-bot-feature h1 {
@@ -217,5 +224,5 @@ body {
 }
 
 .discord-bot-feature:hover div {
-  @apply text-white;
+  /* @apply text-white; */
 }

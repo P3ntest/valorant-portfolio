@@ -20,23 +20,25 @@
 
     <script src="lib/smoothscroll.js"></script>
   </head>
-  <body class="h-full">
-    <div class="overflow-hidden relative" id="start">
-      <div
-        style="
-          background-image: url('images/decoration/p3ntest.svg');
-          background-repeat: no-repeat;
-        "
-        alt="P3ntest Development"
-        class="
-          absolute
-          decoration decoration-p3ntest
-          w-60
-          h-full
-          z-20
-          overflow-hidden
-        "
-      ></div>
+  <body>
+    <div class="relative" id="start">
+      <div class="h-full overflow-hidden absolute top-0 left-0 w-60">
+        <div
+          style="
+            background-image: url('images/decoration/p3ntest.svg');
+            background-repeat: no-repeat;
+          "
+          alt="P3ntest Development"
+          class="
+            absolute
+            decoration decoration-p3ntest
+            w-60
+            h-full
+            z-20
+            overflow-hidden
+          "
+        ></div>
+      </div>
 
       <div class="nav" id="nav">
         <a href="/"
@@ -192,13 +194,13 @@
             <h1 class="section-header mb-10 md:mb-16">MY SERVICES</h1>
             <div class="w-full">
               <div class="w-full flex flex-col md:flex-row md:mb-7">
-                <div class="service" data-aos="fade-up">
+                <a href="#discord_bots" class="service" data-aos="fade-up">
                   <div class="service-icons">
                     <img src="images/features/discord.svg" alt="Discord Logo" />
                     <img src="images/features/robot.svg" alt="Bot Icon" />
                   </div>
                   <div class="service-footer">Discord Bots</div>
-                </div>
+                </a>
                 <div class="service" data-aos="fade-up">
                   <div class="service-icons">
                     <img src="images/features/gear.svg" alt="Discord Logo" />
@@ -347,6 +349,7 @@
         <div class="divider"></div>
         <div>
           <div class="w-full md:pr-96 relative">
+            <div id="discord_bots" class="absolute" style="top: -120px"></div>
             <img
               src="images/decoration/botcard.svg"
               alt=""
@@ -372,7 +375,11 @@
                   </p>
                 </div>
               </div>
-              <div class="discord-bot-feature" data-aos="fade-up">
+              <a
+                href="https://discordcp.dev"
+                class="discord-bot-feature"
+                data-aos="fade-up"
+              >
                 <h1>NO FIDDLING WITH CONFIG FILES</h1>
                 <div>
                   <p>
@@ -381,7 +388,7 @@
                     updates will be mirrored instantly.
                   </p>
                 </div>
-              </div>
+              </a>
             </div>
             <div class="row">
               <div class="discord-bot-feature" data-aos="fade-up">
