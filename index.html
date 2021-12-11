@@ -32,7 +32,7 @@
 
     <script src="lib/smoothscroll.js"></script>
   </head>
-  <body>
+  <body class="overflow-x-hidden">
     <div class="relative" id="start">
       <div class="h-full overflow-hidden absolute top-0 left-0 w-60">
         <div
@@ -57,7 +57,7 @@
           ><img src="images/logo.svg" alt="P3ntest Logo" class="m-5 mr-8"
         /></a>
         <div
-          class="hidden md:flex flex-row flex-wrap justify-center items-center"
+          class="hidden xl:flex flex-row flex-wrap justify-center items-center"
         >
           <a href="#start" class="px-4 hover:text-white">Home</a>
           <a href="#latest_work" class="px-4 hover:text-white">Latest Work</a>
@@ -86,28 +86,28 @@
           h-screen
           bg-main
           flex flex-col
-          md:flex-row
+          xl:flex-row
           items-center
           justify-center
         "
       >
-        <h1 class="text-white font-black main-header text-5xl md:text-9xl">
+        <h1 class="text-white font-black main-header text-5xl xl:text-9xl">
           Hi, I'm <br /><span class="text-val">P3ntest</span>
         </h1>
         <img
           src="images/logo.svg"
           alt="P3ntest Logo"
-          class="w-52 mt-20 ml-50 md:w-96 md:ml-28 md:mt-4"
+          class="w-52 mt-20 ml-50 xl:w-96 xl:ml-28 xl:mt-4"
         />
       </div>
       <div
         class="
           px-5
-          md:pl-96
+          xl:pl-96
           pt-10
-          md:pt-40 md:pr-28
+          xl:pt-40 xl:pr-28
           pb-20
-          md:pb-52
+          xl:pb-52
           bg-main-darker
           relative
         "
@@ -117,10 +117,10 @@
         <div
           class="
             flex flex-col
-            md:flex-row
+            xl:flex-row
             w-full
             mt-10
-            md:mt-20
+            xl:mt-20
             text-text-card
             font-medium
             text-2xl text-center
@@ -128,7 +128,7 @@
             z-50
           "
         >
-          <div class="mb-6 md:mb-0 md:w-1/4 md:mr-6" data-aos="fade-up">
+          <div class="mb-6 xl:mb-0 xl:w-1/4 xl:mr-6" data-aos="fade-up">
             <a href="https://vibingcloud.com/" target="_blank">
               <div class="card group">
                 <div
@@ -144,7 +144,7 @@
               </div>
             </a>
           </div>
-          <div class="mb-6 md:mb-0 md:w-1/4 md:mx-6" data-aos="fade-up">
+          <div class="mb-6 xl:mb-0 xl:w-1/4 xl:mx-6" data-aos="fade-up">
             <div class="card group">
               <div
                 class="card-image"
@@ -159,7 +159,7 @@
               <p class="card-footer">HTML · CSS · JS</p>
             </div>
           </div>
-          <div class="mb-6 md:mb-0 md:w-1/4 md:mx-6" data-aos="fade-up">
+          <div class="mb-6 xl:mb-0 xl:w-1/4 xl:mx-6" data-aos="fade-up">
             <div class="card group">
               <div
                 class="card-image"
@@ -174,7 +174,7 @@
               <p class="card-footer">HTML · CSS · JS</p>
             </div>
           </div>
-          <div class="mb-6 md:mb-0 md:w-1/4 md:ml-6" data-aos="fade-up">
+          <div class="mb-6 xl:mb-0 xl:w-1/4 xl:ml-6" data-aos="fade-up">
             <a href="https://discordcp.dev/" target="_blank">
               <div class="card group">
                 <div
@@ -196,16 +196,16 @@
           class="
             w-full
             flex flex-col
-            md:flex-row
+            xl:flex-row
             justify-items-stretch
             relative
           "
         >
           <div id="services" class="absolute" style="top: -120px"></div>
-          <div class="flex-1 md:mr-20">
-            <h1 class="section-header mb-10 md:mb-16">MY SERVICES</h1>
+          <div class="flex-1 xl:mr-20">
+            <h1 class="section-header mb-10 xl:mb-16">MY SERVICES</h1>
             <div class="w-full">
-              <div class="w-full flex flex-col md:flex-row md:mb-7">
+              <div class="w-full flex flex-col xl:flex-row xl:mb-7">
                 <a href="#discord_bots" class="service" data-aos="fade-up">
                   <div class="service-icons">
                     <img src="images/features/discord.svg" alt="Discord Logo" />
@@ -221,7 +221,7 @@
                   <div class="service-footer">Backend Development</div>
                 </div>
               </div>
-              <div class="w-full flex flex-col md:flex-row">
+              <div class="w-full flex flex-col xl:flex-row">
                 <div class="service" data-aos="fade-up">
                   <div class="service-icons">
                     <img src="images/features/design.svg" alt="Discord Logo" />
@@ -239,9 +239,9 @@
               </div>
             </div>
           </div>
-          <div class="divider flex-0 block md:hidden"></div>
+          <div class="divider flex-0 block xl:hidden"></div>
           <div class="flex-0">
-            <h1 class="section-header mb-10 md:mb-16">CONTACT ME</h1>
+            <h1 class="section-header mb-10 xl:mb-16">CONTACT ME</h1>
             <div>
               <a href="https://discord.gg/UhhFjzTb39">
                 <div class="socials" data-aos="fade-left">
@@ -299,7 +299,7 @@
           </div>
         </div>
         <div class="divider"></div>
-        <div class="w-full relative md:pr-52">
+        <div class="w-full relative xl:pr-52">
           <div id="reviews" class="absolute" style="top: -120px"></div>
           <img
             src="images/decoration/barcode.svg"
@@ -308,9 +308,9 @@
             data-aos="fade-left"
           />
           <div class="w-full">
-            <h1 class="section-header mb-10 md:mb-16">CLIENT REVIEWS</h1>
-            <div class="row md:mb-8">
-              <div class="review md:mr-4" data-aos="fade-up">
+            <h1 class="section-header mb-10 xl:mb-16">CLIENT REVIEWS</h1>
+            <div class="row xl:mb-8">
+              <div class="review xl:mr-4" data-aos="fade-up">
                 <h1>BANKERS</h1>
                 <p>
                   “Very down-to-earth, respectable and professional developer. I
@@ -320,7 +320,7 @@
                 </p>
                 <h3>June 2020 · Discord Bot</h3>
               </div>
-              <div class="review md:ml-4" data-aos="fade-up">
+              <div class="review xl:ml-4" data-aos="fade-up">
                 <h1>YAN CINTRO</h1>
                 <p>
                   “P3ntest helped me build my dream minecraft server. He not
@@ -334,7 +334,7 @@
               </div>
             </div>
             <div class="row">
-              <div class="review md:mr-4" data-aos="fade-up">
+              <div class="review xl:mr-4" data-aos="fade-up">
                 <h1>TEEMOKINGDOM</h1>
                 <p>
                   “The developer always responded almost instantly and kept
@@ -347,7 +347,7 @@
                 </p>
                 <h3>November 2021 · Web Design</h3>
               </div>
-              <div class="review md:ml-4" data-aos="fade-up">
+              <div class="review xl:ml-4" data-aos="fade-up">
                 <h1>TEFER</h1>
                 <p>
                   “Fast, easy to work with and friendly. He finished my stock
@@ -360,7 +360,7 @@
         </div>
         <div class="divider"></div>
         <div>
-          <div class="w-full md:pr-96 relative">
+          <div class="w-full xl:pr-96 relative">
             <div id="discord_bots" class="absolute" style="top: -120px"></div>
             <img
               src="images/decoration/botcard.svg"
@@ -377,7 +377,7 @@
               in the web browser instead of having to fiddle around with
               annoying JSON and YAML files.
             </p>
-            <div class="row md:mb-8 mt-7 md:mt-12">
+            <div class="row xl:mb-8 mt-7 xl:mt-12">
               <div class="discord-bot-feature" data-aos="fade-up">
                 <h1>PROFESSIONAL AND CLEAN CODE</h1>
                 <div>
