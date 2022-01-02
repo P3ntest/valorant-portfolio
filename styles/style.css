@@ -16,7 +16,7 @@ body {
         flex flex-row
         items-center
         justify-center
-        xl:justify-items-start
+        md:justify-items-start
         transition-all z-50;
 }
 
