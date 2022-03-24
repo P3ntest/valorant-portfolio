@@ -222,6 +222,10 @@ body {
                   leading-normal
 }
 
+.navlink {
+  @apply hidden md:inline px-4 hover:text-white;
+}
+
 .discord-bot-feature:hover div {
   /* @apply text-white; */
 }
