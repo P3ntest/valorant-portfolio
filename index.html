@@ -460,7 +460,8 @@
       <div
         class="bg-black text-white-light w-full p-4 text-center relative z-30"
       >
-        COPYRIGHT 2022 © P3NTEST
+        COPYRIGHT <span id="year">2022</span> © P3NTEST
+        <script>document.getElementById("year").innerHTML = new Date().getFullYear();</script>
       </div>
       <script>
         AOS.init();
